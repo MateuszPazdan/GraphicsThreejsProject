@@ -36,22 +36,22 @@ export function reflector(test) {
 }
 
 export function lamps(test) {
-	const swiatla1 = new THREE.PointLight(0xffffff, 1000, 60, 2);
+	const swiatla1 = new THREE.PointLight(0xffffff, 500, 60, 2);
 	swiatla1.position.set(20, 30, 20);
 	swiatla1.castShadow = true;
 	const plHelper1 = new THREE.PointLightHelper(swiatla1, 0.5);
 	test.scene.add(swiatla1, plHelper1);
-	const swiatla2 = new THREE.PointLight(0xffffff, 1000, 60, 2);
+	const swiatla2 = new THREE.PointLight(0xffffff, 500, 60, 2);
 	swiatla2.position.set(-20, 30, 20);
 	swiatla2.castShadow = true;
 	const plHelper2 = new THREE.PointLightHelper(swiatla2, 0.5);
 	test.scene.add(swiatla2, plHelper2);
-	const swiatla3 = new THREE.PointLight(0xffffff, 1000, 60, 2);
+	const swiatla3 = new THREE.PointLight(0xffffff, 500, 60, 2);
 	swiatla3.position.set(20, 30, -20);
 	swiatla3.castShadow = true;
 	const plHelper3 = new THREE.PointLightHelper(swiatla3, 0.5);
 	test.scene.add(swiatla3, plHelper3);
-	const swiatla4 = new THREE.PointLight(0xffffff, 1000, 60, 2);
+	const swiatla4 = new THREE.PointLight(0xffffff, 500, 60, 2);
 	swiatla4.position.set(-20, 30, -20);
 	swiatla4.castShadow = true;
 	const plHelper4 = new THREE.PointLightHelper(swiatla4, 0.5);
