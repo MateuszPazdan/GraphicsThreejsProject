@@ -1,8 +1,19 @@
-# React + Vite
+# Three.js  Robot Factory Simulation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simulation of a robot factory created using React and Three.js. It features three robot meshes and two conveyor belts. The robots manipulate carton box between each other. Users can manage lighting, cameras and enable animations.
 
-Currently, two official plugins are available:
+![Project Image](https://github.com/MateuszPazdan/GraphicsThreejsProject/blob/master/public/showImages/showImage.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Features
+
+- 3D Meshes: The project includes three different robot models represented as meshes and Conveyor Belts.
+- Interactivity: Users can control lighting, cameras settings and enable animations for a more dynamic experience.
+
+## Usage
+
+```
+$ git clone https://github.com/MateuszPazdan/GraphicsThreejsProject.git
+$ npm i
+$ npm run dev
+```
