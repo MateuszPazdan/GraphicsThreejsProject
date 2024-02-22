@@ -1,13 +1,13 @@
 import * as THREE from 'three';
 
 export function ambientLight(test) {
-	const oswietlenieAmbient = new THREE.AmbientLight(0xffffff, 0.1);
+	const oswietlenieAmbient = new THREE.AmbientLight(0xffffff, 10);
 	test.scene.add(oswietlenieAmbient);
 	return oswietlenieAmbient;
 }
 
 export function directionalLight(test) {
-	const oswietlenieKierunkowe = new THREE.DirectionalLight(0xffffff, 0.1);
+	const oswietlenieKierunkowe = new THREE.DirectionalLight(0xffffff, 10);
 	oswietlenieKierunkowe.position.set(0, 28, 0);
 	oswietlenieKierunkowe.shadow.camera.left = -50;
 	oswietlenieKierunkowe.shadow.camera.right = 50;
@@ -30,8 +30,8 @@ export function reflector(test) {
 	pl.position.set(0, 19, 46);
 	// const plHelper = new THREE.PointLightHelper(pl, 0.5);
 	test.scene.add(pl);
-	sl.visible = false;
-	pl.visible = false;
+	// sl.visible = false;
+	// pl.visible = false;
 	return { sl, pl };
 }
 

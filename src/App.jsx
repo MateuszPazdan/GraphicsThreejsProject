@@ -123,56 +123,56 @@ function App() {
 			)
 			.name('kamera4');
 
-		// oswietlenie
-		const oswietlenieFolder = gui.addFolder('Oswietlenie');
-		const ambientFolder = oswietlenieFolder.addFolder('ambient');
-		const ustawieniaAmbient = { color: oswietlenieAmbient.color.getHex() };
-		ambientFolder.add(oswietlenieAmbient, 'visible');
-		ambientFolder.add(oswietlenieAmbient, 'intensity', 0, 1, 0.1);
-		ambientFolder
-			.addColor(ustawieniaAmbient, 'color')
-			.onChange((value) => oswietlenieAmbient.color.set(value));
+		// // oswietlenie
+		// const oswietlenieFolder = gui.addFolder('Oswietlenie');
+		// const ambientFolder = oswietlenieFolder.addFolder('ambient');
+		// const ustawieniaAmbient = { color: oswietlenieAmbient.color.getHex() };
+		// ambientFolder.add(oswietlenieAmbient, 'visible');
+		// ambientFolder.add(oswietlenieAmbient, 'intensity', 0, 1, 0.1);
+		// // ambientFolder
+		// // 	.addColor(ustawieniaAmbient, 'color')
+		// // 	.onChange((value) => oswietlenieAmbient.color.set(value));
 
-		const KierunkoweFolder = oswietlenieFolder.addFolder(
-			'oswietlenie kierunkowe'
-		);
-		const ustawieniaKierunkowe = {
-			visible: true,
-			color: oswietlenieKierunkowe.color.getHex(),
-		};
-		KierunkoweFolder.add(oswietlenieKierunkowe, 'visible');
-		KierunkoweFolder.add(oswietlenieKierunkowe, 'intensity', 0, 1, 0.1);
-		KierunkoweFolder.add(oswietlenieKierunkowe, 'castShadow');
-		KierunkoweFolder.addColor(ustawieniaKierunkowe, 'color').onChange((value) =>
-			oswietlenieKierunkowe.color.set(value)
-		);
-		const reflektorFolder = oswietlenieFolder.addFolder('reflektor');
-		reflektorFolder
-			.add(
-				{
-					toggleLights: () => {
-						sl.visible = !sl.visible;
-						pl.visible = !pl.visible;
-					},
-				},
-				'toggleLights'
-			)
-			.name('wlacz/wylacz');
+		// const KierunkoweFolder = oswietlenieFolder.addFolder(
+		// 	'oswietlenie kierunkowe'
+		// );
+		// const ustawieniaKierunkowe = {
+		// 	visible: true,
+		// 	color: oswietlenieKierunkowe.color.getHex(),
+		// };
+		// KierunkoweFolder.add(oswietlenieKierunkowe, 'visible');
+		// KierunkoweFolder.add(oswietlenieKierunkowe, 'intensity', 0, 1, 0.1);
+		// KierunkoweFolder.add(oswietlenieKierunkowe, 'castShadow');
+		// KierunkoweFolder.addColor(ustawieniaKierunkowe, 'color').onChange((value) =>
+		// 	oswietlenieKierunkowe.color.set(value)
+		// );
+		// const reflektorFolder = oswietlenieFolder.addFolder('reflektor');
+		// reflektorFolder
+		// 	.add(
+		// 		{
+		// 			toggleLights: () => {
+		// 				sl.visible = !sl.visible;
+		// 				pl.visible = !pl.visible;
+		// 			},
+		// 		},
+		// 		'toggleLights'
+		// 	)
+		// 	.name('wlacz/wylacz');
 
-		const swiatlaFolder = oswietlenieFolder.addFolder('lampy');
-		swiatlaFolder
-			.add(
-				{
-					toggleLights: () => {
-						swiatla1.visible = !swiatla1.visible;
-						swiatla2.visible = !swiatla2.visible;
-						swiatla3.visible = !swiatla3.visible;
-						swiatla4.visible = !swiatla4.visible;
-					},
-				},
-				'toggleLights'
-			)
-			.name('wlacz/wylacz');
+		// const swiatlaFolder = oswietlenieFolder.addFolder('lampy');
+		// swiatlaFolder
+		// 	.add(
+		// 		{
+		// 			toggleLights: () => {
+		// 				swiatla1.visible = !swiatla1.visible;
+		// 				swiatla2.visible = !swiatla2.visible;
+		// 				swiatla3.visible = !swiatla3.visible;
+		// 				swiatla4.visible = !swiatla4.visible;
+		// 			},
+		// 		},
+		// 		'toggleLights'
+		// 	)
+		// 	.name('wlacz/wylacz');
 
 		//OTOCZENIE________________________________________________________________
 		const texture = new THREE.TextureLoader().load('./assets/metal.jpg');
@@ -261,11 +261,7 @@ function App() {
 		};
 	}, []);
 
-	return (
-		<div>
-			<canvas id='myThreeJsCanvas' />
-		</div>
-	);
+	return <canvas id='myThreeJsCanvas' />;
 }
 
 export default App;
