@@ -23,7 +23,7 @@ export function conveyor1(textureMetalTasmociag, loader) {
 		tasmociag.add(object);
 	});
 	// tasma
-	const textureTasma = new THREE.TextureLoader().load('./assets/test.jpg');
+	const textureTasma = new THREE.TextureLoader().load('./test.jpg');
 	textureTasma.wrapS = THREE.RepeatWrapping;
 	textureTasma.wrapT = THREE.RepeatWrapping;
 	textureTasma.repeat.set(1, 5);

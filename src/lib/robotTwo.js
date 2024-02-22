@@ -21,7 +21,7 @@ export function robotTwo(loader, tamsociagMaterial, robotMaterial) {
 		object.scale.set(0.2, 0.1, 0.1);
 		podstawaRobot2.add(object);
 	});
-	const textureTasma2 = new THREE.TextureLoader().load('./assets/test.jpg');
+	const textureTasma2 = new THREE.TextureLoader().load('./test.jpg');
 	textureTasma2.wrapS = THREE.RepeatWrapping;
 	textureTasma2.wrapT = THREE.RepeatWrapping;
 	textureTasma2.repeat.set(1, 5);

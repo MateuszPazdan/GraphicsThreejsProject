@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 export function cartoon() {
-	const textureKarton = new THREE.TextureLoader().load('./assets/karton.jpg');
+	const textureKarton = new THREE.TextureLoader().load('./karton.jpg');
 	const karton = new THREE.Group();
 	karton.position.x = -19.3;
 	karton.position.y = 1;

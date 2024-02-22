@@ -3,12 +3,12 @@ import { mainDoor } from './mainDoor';
 export function environment(loader) {
 	const otoczenie = new THREE.Group();
 
-	const textureFloor = new THREE.TextureLoader().load('./assets/podloga.jpg');
+	const textureFloor = new THREE.TextureLoader().load('./podloga.jpg');
 	textureFloor.wrapT = THREE.RepeatWrapping;
 	textureFloor.wrapS = THREE.RepeatWrapping;
 	textureFloor.repeat.set(4, 4);
-	const textureWall = new THREE.TextureLoader().load('./assets/sciana.jpg');
-    const texture = new THREE.TextureLoader().load('./assets/metal.jpg');
+	const textureWall = new THREE.TextureLoader().load('./sciana.jpg');
+    const texture = new THREE.TextureLoader().load('./metal.jpg');
     const materialLamp = new THREE.MeshStandardMaterial({
         map: texture,
         roughness: 0.2,

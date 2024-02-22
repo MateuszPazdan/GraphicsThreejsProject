@@ -14,7 +14,7 @@ export function mirror(width,height) {
 	const mirror = new Reflector(mirrorGeometry, mirrorOptions);
 	mirrorBox.add(mirror);
 
-    const textureRama = new THREE.TextureLoader().load('./assets/metal.jpg');
+    const textureRama = new THREE.TextureLoader().load('./metal.jpg');
 	const materialRama = new THREE.MeshStandardMaterial({
 		map: textureRama,
 		side: THREE.DoubleSide,

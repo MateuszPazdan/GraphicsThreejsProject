@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 export function mainDoor() {
 	const mainDoor = new THREE.Group();
-	const textureBrama = new THREE.TextureLoader().load('./assets/brama.jpg');
+	const textureBrama = new THREE.TextureLoader().load('./brama.jpg');
 	const materialBrama = new THREE.MeshStandardMaterial({
 		map: textureBrama,
 		side: THREE.FrontSide,
@@ -11,7 +11,7 @@ export function mainDoor() {
 	meshBrama.receiveShadow = true;
 	mainDoor.add(meshBrama);
 
-	const textureRama = new THREE.TextureLoader().load('./assets/metal.jpg');
+	const textureRama = new THREE.TextureLoader().load('./metal.jpg');
 	const materialRama = new THREE.MeshStandardMaterial({
 		map: textureRama,
 		side: THREE.DoubleSide,

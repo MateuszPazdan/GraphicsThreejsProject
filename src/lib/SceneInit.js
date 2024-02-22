@@ -27,6 +27,7 @@ export default class SceneInit {
 
 	initialize() {
 		this.scene = new THREE.Scene();
+
 		this.camera = new THREE.PerspectiveCamera(
 			this.fov,
 			window.innerWidth / window.innerHeight,
